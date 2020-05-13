@@ -1,0 +1,26 @@
+<body>
+  <h1 class="text-center">Votre magasin <span class="store-name">{{store.name}}</span></h1>
+  <div class="row">
+    <div class="col-sm">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-3"></div>
+        <div class="col-sm">
+        <h3>Adresse:</h3>
+          <p>{{store.address}} <br>
+          {{store.postal_code}} <br>
+          {{store.city}}</p>
+          <h4>Type de magasin</h4>
+          <ul>
+            <li>{{store.type}}</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm">
+      <div id="store-map"></div>
+    </div>
+  </div>
+
+
+</body>
