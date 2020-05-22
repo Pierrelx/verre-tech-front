@@ -1,4 +1,5 @@
 <body>
+<div *ngIf="store.name">
   <h1 class="text-center">Votre magasin <span class="store-name">{{store.name}}</span></h1>
   <div class="row">
     <div class="col-sm">
@@ -17,10 +18,13 @@
 
       </div>
     </div>
+  </div>
+
+</div>
     <div class="col-sm">
       <div id="store-map"></div>
     </div>
-  </div>
-
-
+<div *ngIf="!store.name">
+  <h2>Ce magasin n'existe pas ! </h2>
+</div>
 </body>

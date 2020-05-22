@@ -10,7 +10,8 @@ import { HttpClient } from "@angular/common/http";
 })
 export class StoreService {
 
-  constructor(private _http : HttpClient) { }
+  // tslint:disable-next-line: variable-name
+  constructor(private _http: HttpClient) { }
 
   GetStore(id: number): Promise<Store>{
     let store: Store

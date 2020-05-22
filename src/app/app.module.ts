@@ -6,18 +6,24 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { StoreComponent } from './pages/store/store.component';
+import { StoreComponent } from './pages/store/store/store.component';
+import { ListComponent } from './pages/store/list/list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CovalentLayoutModule } from '@covalent/core/layout';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    CovalentLayoutModule,
   ],
   providers: [
     {

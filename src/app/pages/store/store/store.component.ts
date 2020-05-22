@@ -1,5 +1,5 @@
-import { StoreService } from './../../services/store.service';
-import { Store } from './../../models/store';
+import { StoreService } from './../../../services/store.service';
+import { Store } from './../../../models/store';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as L from "leaflet";

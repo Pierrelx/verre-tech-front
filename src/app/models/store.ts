@@ -10,6 +10,7 @@ export class Store{
   Longitude: number
   CreatedOn: number
   UpdatedOn: number
+  Error: string
 
   constructor(){
     this.Id = 0
@@ -23,6 +24,7 @@ export class Store{
     this.Longitude = 0
     this.CreatedOn = 0
     this.UpdatedOn = 0
+    this.Error = ""
   }
 
 }
